@@ -1,0 +1,133 @@
+{% extends 'publicapp/base.html' %}
+
+{% block content %}
+
+<section class="pt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-12">
+                <!-- <div class="card" style="width: 18rem;">
+                    <div class="dropdown">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item dropdown-menu">Fruits
+                        </li>
+                        <li class="list-group-item"><a href="#">Vegetables</a></li>
+                        <li class="list-group-item"><a href="#">Electronics</a></li>
+                        <li class="list-group-item"><a href="#">Groceries</a></li>
+                    </ul>
+                    
+                </div> -->
+                <div class="dropend">
+                    <button class="btn btn-light dropdown-toggle form-control" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      Fruits
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <li><a class="dropdown-item" href="{% url 'apple' %}">Apple</a></li>
+                      <li><a class="dropdown-item" href="{% url 'orange' %}">Orange</a></li>
+                      <li><a class="dropdown-item" href="{% url 'grape' %}">Grape</a></li>
+                    </ul>
+                </div>
+                <div class="dropend">
+                    <button class="btn btn-light dropdown-toggle form-control" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        Vegetables
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="{% url 'tomato' %}">Tomato</a></li>
+                        <li><a class="dropdown-item" href="{% url 'potato' %}">Potato</a></li>
+                        <li><a class="dropdown-item" href="{% url 'bitter' %}">Bitter Gourd</a></li>
+                    </ul>
+                </div>
+                <div class="dropend">
+                    <button class="btn btn-light dropdown-toggle form-control" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        Electronics
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="{% url 'mobile' %}">Mobile</a></li>
+                        <li><a class="dropdown-item" href="{% url 'tv' %}">Television</a></li>
+                        <li><a class="dropdown-item" href="{% url 'fridge' %}">Refrigerator</a></li>
+                        <li><a class="dropdown-item" href="{% url 'wash' %}">Washing Machine</a></li>
+                    </ul>
+                </div>
+                <div class="dropend">
+                    <button class="btn btn-light dropdown-toggle form-control" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        Groceries
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="{% url 'atta' %}">Atta</a></li>
+                        <li><a class="dropdown-item" href="{% url 'maida' %}">Maida</a></li>
+                        <li><a class="dropdown-item" href="{% url 'rice' %}">Rice</a></li>
+                    </ul>
+                </div>
+            </div>
+        
+            <div class="col-md-8 col-12">
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                        <div class="tr">
+                            <a href="{% url 'fruits' %}">
+                            <div class="card">
+                                <img src="https://starpng.com/public/uploads/preview/fruits-hd-fruit-picture-image-png-image-transparent-101576600122lybudlo12o.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                <h5 class="card-title">Fruits</h5>
+                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="hr">
+                            <a href="{% url 'vegetables' %}">
+                            <div class="card">
+                                <img src="https://lh3.googleusercontent.com/proxy/-fFHcXQ0euV_erFafgBhXyzGaC7zKbpBXA27YuBGnqKE6l4x6UxPJG6-j142Kg4fZIU0h0XUL1rMml9u4nAkhFfIWGtcu-sSK0LyqUrpyYwKMCJnuCxgwZRdZxN7m-elGtX2JqQhnvMGUCrPK0Jlz8wI3Xk=s0-d" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                <h5 class="card-title">Vegetables</h5>
+                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="sr">
+                            <a href="{% url 'electro' %}">
+                            <div class="card">
+                                <img src="https://www.pngitem.com/pimgs/m/520-5208848_samsung-min-electronics-hd-png-download.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                <h5 class="card-title">Electronics</h5>
+                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. </p>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="qr">
+                            <a href="{% url 'groceries' %}">
+                            <div class="card">
+                                <img src="https://i.pinimg.com/originals/14/c3/c5/14c3c5c519398e5c7f897d4ef082a8e1.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                <h5 class="card-title">Groceries</h5>
+                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    .tr:hover,.hr:hover,.sr:hover,.qr:hover{
+        transform: scale(1.1);
+    }
+</style>
+
+{% endblock %}
